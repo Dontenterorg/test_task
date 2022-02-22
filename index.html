@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+      
+    <link rel="stylesheet"  href="style.css">
+    <title>Депозитный калькулятор</title>   
+
+      
+  </head>
+  <body>
+    <header>
+        <img src="image/icon.png" alt="iq dev" class="TopImageClass">
+        <h1 class="TopTextClass">Deposit Calculator</h1>
+    </header>
+      <div class="Content">
+          <h1 class="Content_Text1">Депозитный калькулятор</h1>
+          <h2 class = "Content_Text2">Калькулятор депозитов позволяет рассчитать ваши доходы после внесения суммы на счет в банке по опредленному тарифу.</h2>
+          <div class="content_div2">
+            <input type='text' class="datepicker-here" data-position="right top" name="Date" placeholder="Дата открытия счёта">
+              <div class="LenghtContainerClass">
+                  <input class="InputLenghtClass" type="number" placeholder="Срок вклада" name="term">
+                  <select class="SelectBox">
+                      <option value="month">Месяц</option>
+                      <option value="year">Год</option>
+                </select>
+              </div>
+            
+          </div>
+          <div class="Content_div1">
+            <input class="InputClass" type="number"
+                   name="Summ" placeholder="Сумма вклада">
+            <input class="InputClass" type="number" name="percent" placeholder="Процентная ставка, % годовых">
+          </div>
+           <div class="Content_div1">
+               <div class="CheckBoxClass">
+            <input class="CheckBoxInputClass" type="checkbox">
+            <h3 class="CheckBoxTextClass">Ежемесячное пополнение вклада</h3>
+                   </div>
+                <input class="InputClassNumber" type="number" placeholder="Сумма пополнения вклада" name="adjunction">
+          </div>
+          <div class="ButtonContainerClass" >
+           <input type="button" class="ButtonClass" value="Рассчитать">
+          </div>
+         <h2 class="ResultText">Результат Вычислений</h2>
+      </div>
+
+                  <script src="assets/jquery-3.6.0.min.js"></script>
+                  <script src="script.js"></script>
+       <link href="assets/datepicker.min.css" rel="stylesheet" type="text/css">
+        <script src="assets/datepicker.min.js"></script>
+
+  </body>
+</html>
